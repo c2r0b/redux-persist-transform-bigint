@@ -1,0 +1,35 @@
+{
+  "name": "redux-persist-transform-bigint",
+  "version": "1.0.0",
+  "description": "Transformer to serialize BigInt in Redux Persist",
+  "type": "module",
+  "browser": "dist/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:transform && npm run build:types",
+    "build:transform": "node config/esbuild.js",
+    "build:types": "tsc -p config/tsconfig.json --emitDeclarationOnly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c2r0b/redux-persist-transform-bigint.git"
+  },
+  "author": "c2r0b",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/c2r0b/redux-persist-transform-bigint/issues"
+  },
+  "homepage": "https://github.com/c2r0b/redux-persist-transform-bigint#readme",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.38",
+    "esbuild": "^0.19.7",
+    "typescript": "^5.3.2"
+  }
+}
