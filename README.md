@@ -25,7 +25,7 @@ const persistConfig = {
 or with custom options:
 
 ```javascript
-import createTransform from 'redux-persist-transform-bigint'
+import createBigIntTransform from 'redux-persist-transform-bigint'
 
 const persistConfig = {
   key: 'root',
