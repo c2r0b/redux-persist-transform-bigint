@@ -5,12 +5,12 @@ Solves issue [#1447](https://github.com/rt2zz/redux-persist/issues/1447) of Redu
 
 ## Installation
 ```bash
-npm install --save redux-persist-transformer-bigint
+npm install --save redux-persist-transform-bigint
 ```
 
 ## Usage
 ```javascript   
-import { BigIntTransform } from 'redux-persist-transformer-bigint'
+import { BigIntTransform } from 'redux-persist-transform-bigint'
 
 const persistConfig = {
   key: 'root',
@@ -25,7 +25,7 @@ const persistConfig = {
 or with custom options:
 
 ```javascript
-import createTransform from 'redux-persist-transformer-bigint'
+import createTransform from 'redux-persist-transform-bigint'
 
 const persistConfig = {
   key: 'root',
