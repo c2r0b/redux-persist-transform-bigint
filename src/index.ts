@@ -8,7 +8,7 @@ const fromBigInt = (value: any):unknown => {
     if (Array.isArray(value)) {
         return value.map((v) => fromBigInt(v))
     }
-    if (typeof value === 'object') {
+    if (typeof value === 'object' && value !== null) {
         return Object.fromEntries(
             Object.entries(value).map(([k, v]) => [k, fromBigInt(v)])
         )
@@ -26,7 +26,7 @@ const toBigInt = (value: any):unknown => {
     if (Array.isArray(value)) {
         return value.map((v) => toBigInt(v))
     }
-    if (typeof value === 'object') {
+    if (typeof value === 'object' && value !== null) {
         return Object.fromEntries(
             Object.entries(value).map(([k, v]) => [k, toBigInt(v)])
         )
